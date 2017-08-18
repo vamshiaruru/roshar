@@ -1,3 +1,6 @@
+"""
+A practice python program. Nothing more. Shoo
+"""
 n = int(raw_input())
 count = 0
 j=0

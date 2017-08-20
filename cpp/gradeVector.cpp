@@ -19,9 +19,11 @@ int main(){
     }
     int size = homework.size();
     sort(homework.begin(), homework.end());
-    int median = size % 2 == 0 ? (homework[size/2] + homework[(size/2)+1])/2                         : homework[size/2];
+    int median = size % 2 == 0 ? (homework[size/2] + homework[(size/2)+1])/2 
+                                 : homework[size/2];
 
     streamsize prec = cout.precision();
-    cout << "Your final grade is " << setprecision(3) << 0.2 * midterm + 0.4 * final + 0.4 * median<< setprecision(prec) << endl;
+    cout << "Your final grade is " << setprecision(3) << 0.2 * midterm + 0.4 * 
+            final + 0.4 * median<< setprecision(prec) << endl;
     return 0;
 }

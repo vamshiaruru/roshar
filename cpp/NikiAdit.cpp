@@ -18,7 +18,6 @@ bool check(int input){
     }
     return false;
 }
-
 int main()
 {
     int input;
@@ -45,10 +44,6 @@ int main()
             if(input > 1234567*i){
                 if(check(input - 1234567*i)){
                     cout << "YES" << endl;
-                    return 0;
-                }
-                else{
-                    cout << "NO" << endl;
                     return 0;
                 }
             }

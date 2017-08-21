@@ -16,9 +16,9 @@ def traverse(instruction, destination):
     while True:
         for i in instructions:
             init = move(init, i)
+            count = count + 1
             if init == destination:
                 return True
-            count = count + 1
             if (count/len(instructions)) == 100000:
                 return False
 
